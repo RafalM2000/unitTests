@@ -26,6 +26,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('h2').textContent).toContain('app works');
+    expect(compiled.querySelector('h2').textContent).toContain('Unit');
   });
 });
