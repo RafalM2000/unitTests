@@ -19,3 +19,8 @@ a {
   border-radius: 5px;
   margin-left: 80px;
 }
+
+.center {
+  text-align: center;
+  font-size: large;
+}
