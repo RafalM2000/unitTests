@@ -19,3 +19,12 @@ a {
   border-radius: 5px;
   margin-left: 80px;
 }
+
+.center {
+  text-align: center;
+  font-size: large;
+}
+
+p {
+  font-size: 30px;
+}
