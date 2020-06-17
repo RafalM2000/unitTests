@@ -44,5 +44,5 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('p').textContent).toContain('2');
-  })
+  });
 });
