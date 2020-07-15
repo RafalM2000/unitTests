@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "UnitTests"
+    }
+  },
+  "defaultProject": "UnitTests",
+  "cli": {
+    "analytics": false
+  }
 }
