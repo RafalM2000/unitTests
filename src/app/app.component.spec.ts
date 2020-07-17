@@ -1,5 +1,6 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, async, inject } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { CustomerService } from './customer.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -45,4 +46,12 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('p').textContent).toContain('2');
   });
+  it('Customer service should be injected', inject([CustomerService], (service: CustomerService) => {
+    expect(service).toBeTruthy();
+  }))
+
+  it('Customer variable from our service should be Jane', inject([CustomerService], (service: CustomerService) => {
+    expect(service.customerName).toBe('Jane');
+  }))
+
 });
